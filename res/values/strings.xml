@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="hello">Hello World, ToDoListActivity!</string>
+    <string name="app_name">ToDoList</string>
+    
+    <string name="emptyTasksList">No tasks</string>
+    
+    <string name="add_task">Add Task</string>
+	<string name="delete_task">Delete Task</string>
+    
+    <string name="taskDetails">Task Details</string>
+	<string name="taskPriority">Task Priority</string>
+
+	<string name="hintTaskName">Task Name</string>
+    <string name="hintTaskDescription">Task Description</string>
+	
+	<string name="taskHighPriority">High Priority</string>
+	<string name="taskLowPriority">Low Priority</string>
+    
+	<string name="saveTask">Save</string>
+	
+</resources>
