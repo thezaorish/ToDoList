@@ -11,6 +11,9 @@ import android.widget.RadioGroup;
 import com.zaorish.android.R;
 import com.zaorish.android.todo.dataaccess.TaskDao;
 
+/**
+ * Displays the details of the task, with the ability to save/update the task
+ */
 public class ToDoDetailsActivity extends Activity {
 
 	private TaskDao taskDao;
@@ -100,9 +103,9 @@ public class ToDoDetailsActivity extends Activity {
 			break;
 		}
 
-		saveTask(name, description, selected, priority);
+		saveTask(selected, name, description, priority);
 	}
-	private void saveTask(String name, String description, int selected, int priority) {
+	private void saveTask(int selected, String name, String description, int priority) {
 		if (taskId == null) {
 			long id = taskDao.create(name, description, priority);
 			if (id > 0) {

@@ -16,6 +16,9 @@ import android.widget.SimpleCursorAdapter;
 import com.zaorish.android.R;
 import com.zaorish.android.todo.dataaccess.TaskDao;
 
+/**
+ * Displays the existing tasks, allowing the ability to create new task or delete existing task
+ */
 public class ToDoListActivity extends ListActivity {
 
 	private static final int ACTIVITY_CREATE = 0;
@@ -34,7 +37,6 @@ public class ToDoListActivity extends ListActivity {
 		taskDao = new TaskDao(this);
 		displayTasks();
 	}
-
 	private void displayTasks() {
 		Cursor tasksCursor = taskDao.getAll();
 		startManagingCursor(tasksCursor);
